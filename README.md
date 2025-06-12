@@ -13,6 +13,6 @@
 
 <br>
 
-<img src="/Design/lol.png" alt="alt text" width="500" height="300">
+<img src="/Design/a.webp" alt="alt text" width="500" height="300">
 
 
