@@ -12,6 +12,6 @@
 - CSS-Preprocessor
 
 <br>
-<img src="/Design/intro.png" alt="alt text" width="500" height="300">
+<img src="/Design/intro.webp" alt="alt text" width="500" height="300">
 
 
