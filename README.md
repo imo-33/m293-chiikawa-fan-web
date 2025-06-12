@@ -1,5 +1,5 @@
 
-## Welcome to my Project about Youtube Serie : ALNST ⭐🌌
+## Welcome to my Project about Website dedicated to Chiikawa
 
 
 #### Introduction:
@@ -12,6 +12,6 @@
 - CSS-Preprocessor
 
 <br>
-<img src="/Design/image.png" alt="alt text" width="500" height="300">
+<img src="/Design/intro.png" alt="alt text" width="500" height="300">
 
 
