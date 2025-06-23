@@ -1,8 +1,14 @@
 
 ## Welcome to my Project about Website dedicated to Chiikawa
 
+### Structure
 
-#### Introduction ₊˚ʚ 🌱 ₊˚✧ ﾟ.
+
+
+
+---
+
+### Introduction ₊˚ʚ 🌱 ₊˚✧ ﾟ.
 
 - Grundaufbau
 - Formulare
@@ -11,8 +17,12 @@
 - Video und Semantische Bilder 
 - CSS-Preprocessor
 
+---
+
 ### Project-Description ⋆౨ৎ˚📑⟡˖ 
 Mein Projekt ist eine Website über Chiikawa, eine beliebte japanische Charakterserie. Auf der Seite stelle ich Informationen zur Show, zu den Charakteren und vieles mehr bereit.
+
+---
 
 ### Planned content for the websites ✧˚🗺️⋆｡˚
 - Welcome-Page
