@@ -14,7 +14,7 @@
 ### Project-Description ⋆౨ৎ˚📑⟡˖ 
 Mein Projekt ist eine Website über Chiikawa, eine beliebte japanische Charakterserie. Auf der Seite stelle ich Informationen zur Show, zu den Charakteren und vieles mehr bereit.
 
-### Geplante Inhalte für die Webseiten ✧˚🗺️⋆｡˚
+### Planned content for the websites ✧˚🗺️⋆｡˚
 - Welcome-Page
 - Charakterübersicht (ähnlich einem Katalog)
 - Einzelseiten für jeden Charakter
