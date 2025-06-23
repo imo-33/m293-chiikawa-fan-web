@@ -52,5 +52,32 @@
 
 ---
 
-### c) Template-Seiten
+### d) Template-Seiten
+> *Nachdem nun klar ist wie die beiden Inhaltsseiten aussehen sollen, bilden sie die beiden Wireframes in HTML ab, ohne konkreten Inhalt zu erstellen. Platzieren sie die Container an den korrekten Orten. Verwenden sie dabei eines der drei Frameworks: Grid, Flexbox, Positional Layout. Mit allen drei können sie die Header, Footer, etc korrekt platzieren. Sie dürfen auch mischen, falls dies notwendig sein sollte*.
+>
+> *Verwendenden sie für die Rasteransicht ein anderes Framework (Grid, Flexbox, Positional Layout, flow Layout) als sie für ihre Struktur (Header, Footer, etc) verwendet haben.*
 
+[Path to my Template](/Templates/HTML) *(Ausserdem habe ich Javascript hinzugefügt, um bereits zu wissen, wie die Site-Koordinaten sein werden)
+
+---
+
+### e) Inhaltsseiten
+> *Erstellen sie nun die Inhaltsseiten. Dafür kopieren sie die Templates in den Ordner "Site" und erweitern nur noch die Inhalte. Erstellen sie folgende Inhaltsseiten:
+> 
+> *Projekt-Einstiegsseite: Beschreiben sie kurz den Inhalt. Verwenden sie ein Bild als Unterstützung. Lassen sie den Text um das Bild fliessen. Sie können Bilder von der Plattform unsplash.com oder andere freien Webseiten verwenden. Verwenden sie das erste Template.*
+>
+> *Eine About-Us Seite: Beschreiben sie sich kurz mit einer Liste von Eigenschaften (z.B. Name Hobby, Arbeits- und/oder Schulort, etc). Verwenden sie die korrekten Listen-Tags. Verwenden sie auch hier wieder Bilder von ihnen oder Avataren, die sie darstellen sollen. Schauen sie auf die Darstellung und überlegen sie sich wie sie sich darstellen möchten. Beispiele finden sie im Internet viele. Verwenden sie das erste Template.*
+>
+> *Erstellen sie eine dritte Seite auf der sie ihre Teams, Produkte, etc darstellen. Verwenden sie hier das zweite Template.*
+>
+> *Verwenden sie jeweils Hx-Tags (h1, h2, etc) für Titel und Untertitel und Paragraphen für Texte.*
+
+**ON IT. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA**
+
+---
+
+### f) Publikation
+
+> *Publizieren sie die Inhalte auf einer FTP-Seite. Von der Lehrperson haben sie einen Zugang auf einen FTP bekommen. Verwenden sie diesen Zugang und publizieren sie die Seite dort. Via HTTP sollte die Seite nun verfügbar sein.*
+
+- Ask teacher how to do it.
