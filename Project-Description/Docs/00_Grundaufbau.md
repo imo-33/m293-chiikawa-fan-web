@@ -62,15 +62,15 @@
 ---
 
 ### e) Inhaltsseiten
-> *Erstellen sie nun die Inhaltsseiten. Dafür kopieren sie die Templates in den Ordner "Site" und erweitern nur noch die Inhalte. Erstellen sie folgende Inhaltsseiten:
+> *Erstellen sie nun die Inhaltsseiten. Dafür kopieren sie die Templates in den Ordner "Site" und erweitern nur noch die Inhalte. Erstellen sie folgende Inhaltsseiten:*
 > 
-> *Projekt-Einstiegsseite: Beschreiben sie kurz den Inhalt. Verwenden sie ein Bild als Unterstützung. Lassen sie den Text um das Bild fliessen. Sie können Bilder von der Plattform unsplash.com oder andere freien Webseiten verwenden. Verwenden sie das erste Template.*
+> *- Projekt-Einstiegsseite: Beschreiben sie kurz den Inhalt. Verwenden sie ein Bild als Unterstützung. Lassen sie den Text um das Bild fliessen. Sie können Bilder von der Plattform unsplash.com oder andere freien Webseiten verwenden. Verwenden sie das erste Template.*
 >
-> *Eine About-Us Seite: Beschreiben sie sich kurz mit einer Liste von Eigenschaften (z.B. Name Hobby, Arbeits- und/oder Schulort, etc). Verwenden sie die korrekten Listen-Tags. Verwenden sie auch hier wieder Bilder von ihnen oder Avataren, die sie darstellen sollen. Schauen sie auf die Darstellung und überlegen sie sich wie sie sich darstellen möchten. Beispiele finden sie im Internet viele. Verwenden sie das erste Template.*
+> *- Eine About-Us Seite: Beschreiben sie sich kurz mit einer Liste von Eigenschaften (z.B. Name Hobby, Arbeits- und/oder Schulort, etc). Verwenden sie die korrekten Listen-Tags. Verwenden sie auch hier wieder Bilder von ihnen oder Avataren, die sie darstellen sollen. Schauen sie auf die Darstellung und überlegen sie sich wie sie sich darstellen möchten. Beispiele finden sie im Internet viele. Verwenden sie das erste Template.*
 >
-> *Erstellen sie eine dritte Seite auf der sie ihre Teams, Produkte, etc darstellen. Verwenden sie hier das zweite Template.*
+> *-> Erstellen sie eine dritte Seite auf der sie ihre Teams, Produkte, etc darstellen. Verwenden sie hier das zweite Template.*
 >
-> *Verwenden sie jeweils Hx-Tags (h1, h2, etc) für Titel und Untertitel und Paragraphen für Texte.*
+> *Verwenden sie jeweils Hex-Tags (h1, h2, etc) für Titel und Untertitel und Paragraphen für Texte.*
 
 **ON IT. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA**
 
