@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration - Chiikawa Website</title>
+  <link rel="stylesheet" href="/Site/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="home-icon" onclick="window.location.href='welcome-page.html'" title="Home">
+        <img src="/Assets/Icons/home.png" alt="Home Icon" class="home-icon-img">
+      </div>
+      <div class="nav-buttons">
+        <button class="nav-btn" onclick="window.location.href='welcome-page.html'">Welcome Page</button>
+        <button class="nav-btn" onclick="window.location.href='characters.html'">Characters Page</button>
+        <button class="nav-btn" onclick="window.location.href='about-me.html'">About Me</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="form-section">
+        <div class="form-container">
+          <h1 class="form-title">⋆｡˚꒰ঌ Registration ໒꒱˚｡⋆</h1>
+
+          <form id="registrationForm" class="registration-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName" class="form-label">Vorname *</label>
+                <input type="text" id="firstName" name="firstName" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName" class="form-label">Nachname *</label>
+                <input type="text" id="lastName" name="lastName" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">E-Mail *</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="form-label">Password *</label>
+              <input type="password" id="password" name="password" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="address" class="form-label">Adresse *</label>
+              <input type="text" id="address" name="address" class="form-input" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="plz" class="form-label">PLZ *</label>
+                <input type="text" id="plz" name="plz" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="city" class="form-label">Ort *</label>
+                <input type="text" id="city" name="city" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="country" class="form-label">Land *</label>
+              <select id="country" name="country" class="form-select" required>
+                <option value="">Wählen Sie ein Land</option>
+                <option value="DE">Deutschland</option>
+                <option value="AT">Österreich</option>
+                <option value="CH">Schweiz</option>
+                <option value="FR">Frankreich</option>
+                <option value="IT">Italien</option>
+                <option value="NL">Niederlande</option>
+                <option value="BE">Belgien</option>
+                <option value="ES">Spanien</option>
+                <option value="PT">Portugal</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Geschlecht *</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="male" required>
+                  <span class="radio-custom"></span>
+                  Männlich
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="female" required>
+                  <span class="radio-custom"></span>
+                  Weiblich
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="other" required>
+                  <span class="radio-custom"></span>
+                  Anderes
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <span class="checkbox-custom"></span>
+                Ich akzeptiere die Datenschutzerklärung *
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <span class="checkbox-custom"></span>
+                Ich möchte den Newsletter erhalten
+              </label>
+            </div>
+
+            <button type="submit" class="form-submit-btn">Registrieren</button>
+          </form>
+
+          <div class="form-links">
+            <p>Bereits ein Konto? <a href="log-in.html" class="form-link">Hier anmelden</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="forms.js"></script>
+</body>
+
+</html>
