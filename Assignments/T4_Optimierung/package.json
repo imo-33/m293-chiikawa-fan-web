@@ -1,0 +1,25 @@
+{
+  "name": "t4_optimierung",
+  "version": "1.0.0",
+  "description": "Optimierung der Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rin.m/m293_project_youtubeserie.git"
+  },
+  "keywords": [
+    "chiikawa"
+  ],
+  "author": "Irina M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rin.m/m293_project_youtubeserie/issues"
+  },
+  "homepage": "https://gitlab.com/rin.m/m293_project_youtubeserie#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
