@@ -20,6 +20,10 @@
   },
   "homepage": "https://gitlab.com/rin.m/m293_project_youtubeserie#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "underscore": "^1.13.7"
+  },
+  "devDependencies": {
+    "html-minifier": "^4.0.0"
   }
 }
