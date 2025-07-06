@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Chiikawa Website</title>
+  <link rel="stylesheet" href="/Site/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="home-icon" onclick="window.location.href='welcome-page.html'" title="Home">
+        <img src="/Assets/Icons/home.png" alt="Home Icon" class="home-icon-img">
+      </div>
+      <div class="nav-buttons">
+        <button class="nav-btn" onclick="window.location.href='welcome-page.html'">Welcome Page</button>
+        <button class="nav-btn" onclick="window.location.href='characters.html'">Characters Page</button>
+        <button class="nav-btn" onclick="window.location.href='about-me.html'">About Me</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="form-section">
+        <div class="form-container login-container">
+          <h1 class="form-title">⋆｡˚꒰ঌ Login ໒꒱˚｡⋆</h1>
+
+          <form id="loginForm" class="login-form">
+            <div class="form-group">
+              <label for="loginEmail" class="form-label">E-Mail *</label>
+              <input type="email" id="loginEmail" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="loginPassword" class="form-label">Password *</label>
+              <input type="password" id="loginPassword" name="password" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <span class="checkbox-custom"></span>
+                Angemeldet bleiben
+              </label>
+            </div>
+
+            <button type="submit" class="form-submit-btn">Anmelden</button>
+          </form>
+
+          <div class="form-links">
+            <p><a href="forgot-password.html" class="form-link">Passwort vergessen?</a></p>
+            <p>Noch kein Konto? <a href="registration.html" class="form-link">Hier registrieren</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="forms.js"></script>
+</body>
+
+</html>

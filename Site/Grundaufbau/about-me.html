@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="/Site/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="home-icon" onclick="window.location.href='welcome-page.html'" title="Home">
+        <img src="/Assets/Icons/home.png" alt="Home Icon" class="home-icon-img">
+      </div>
+      <div class="nav-buttons">
+        <button class="nav-btn" onclick="window.location.href='welcome-page.html'">Welcome Page</button>
+        <button class="nav-btn" onclick="window.location.href='characters.html'">Characters Page</button>
+        <button class="nav-btn" onclick="window.location.href='about-me.html'">About Me</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="welcome-content">
+        <section class="about-me">
+          <img src="/Assets/logo.png" alt="A photo of me" class="about-photo" />
+        </section>
+        <div class="background-images">
+          <div class="bg-image"></div>
+          <div class="bg-image"></div>
+          <div class="bg-image"></div>
+          <div class="bg-image"></div>
+          <div class="bg-image"></div>
+          <div class="bg-image"></div>
+          <div class="bg-image"></div>
+          <div class="bg-image"></div>
+        </div>
+        <div class="content-box">
+          <h1 class="content-title">About Me</h1>
+
+          <!-- 2x2 Grid for personal info -->
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">Name</div>
+              <div class="info-value">Irina Mohniuc</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Age</div>
+              <div class="info-value">16</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Work at</div>
+              <div class="info-value">Open Circle AG</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Study at</div>
+              <div class="info-value">TBZ</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Hobbies:</div>
+            <div class="info-value">Coding, drawing, writing and talking to my friends! :D</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

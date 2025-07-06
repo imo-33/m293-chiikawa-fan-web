@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestätigung - Chiikawa Website</title>
+  <link rel="stylesheet" href="/Site/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="home-icon" onclick="window.location.href='welcome-page.html'" title="Home">
+        <img src="/Assets/Icons/home.png" alt="Home Icon" class="home-icon-img">
+      </div>
+      <div class="nav-buttons">
+        <button class="nav-btn" onclick="window.location.href='welcome-page.html'">Welcome Page</button>
+        <button class="nav-btn" onclick="window.location.href='characters.html'">Characters Page</button>
+        <button class="nav-btn" onclick="window.location.href='about-me.html'">About Me</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="confirmation-section">
+        <div class="confirmation-container">
+          <div class="confirmation-icon">✓</div>
+          <h1 class="confirmation-title">⋆｡˚꒰ঌ Erfolgreich registriert! ໒꒱˚｡⋆</h1>
+
+          <div class="confirmation-content">
+            <p class="confirmation-text">
+              Vielen Dank für Ihre Registrierung! Ihre Anmeldung war erfolgreich.
+            </p>
+
+            <div class="confirmation-details">
+              <h3>Anmeldebestätigung und notwendige Informationen:</h3>
+              <ul>
+                <li>Eine Bestätigungs-E-Mail wurde an Ihre E-Mail-Adresse gesendet</li>
+                <li>Bitte überprüfen Sie Ihr Postfach und folgen Sie den Anweisungen</li>
+                <li>Falls Sie keine E-Mail erhalten haben, überprüfen Sie Ihren Spam-Ordner</li>
+                <li>Ihr Konto wird nach der E-Mail-Bestätigung aktiviert</li>
+              </ul>
+            </div>
+
+            <div class="confirmation-actions">
+              <button class="action-button" onclick="window.location.href='log-in.html'">
+                Zum Login
+              </button>
+              <button class="action-button" onclick="window.location.href='welcome-page.html'">
+                Zurück zur Startseite
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="forms.js"></script>
+</body>
+
+</html>

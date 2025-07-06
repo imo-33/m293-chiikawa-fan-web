@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Page</title>
+  <link rel="stylesheet" href="/Site/style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="home-icon" onclick="window.location.href='welcome-page.html'" title="Home">
+        <img src="/Assets/Icons/home.png" alt="Home Icon" class="home-icon-img">
+      </div>
+
+
+      <div class="nav-buttons">
+        <button class="nav-btn" onclick="window.location.href='welcome-page.html'">Welcome Page</button>
+        <button class="nav-btn" onclick="window.location.href='characters.html'">Characters Page</button>
+        <button class="nav-btn" onclick="window.location.href='about-me.html'">About Me</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Welcome Section -->
+      <section class="welcome-content">
+        <div class="background-images">
+          <div class="bg-image" style="background-image: url('/Assets/Photos/background.jpg');"></div>
+          <div class="bg-image" style="background-image: url('/Assets/Photos/background.jpg');"></div>
+          <div class="bg-image" style="background-image: url('/Assets/Photos/background.jpg');"></div>
+          <div class="bg-image" style="background-image: url('/Assets/Photos/background.jpg');"></div>
+          <div class="bg-image" style="background-image: url('/Assets/Photos/background.jpg');"></div>
+          <div class="bg-image" style="background-image: url('/Assets/Photos/background.jpg');"></div>
+          <div class="bg-image" style="background-image: url('/Assets/Photos/background.jpg');"></div>
+          <div class="bg-image" style="background-image: url('/Assets/Photos/background.jpg');"></div>
+        </div>
+
+        <div class="content-box">
+          <h1 class="content-title">⋆｡˚꒰ঌ Welcome ໒꒱˚｡⋆</h1>
+          <p class="text-block">
+            Welcome to my website about Chiikawa!<br>
+            Here you can learn more about Chiikawa, the world she lives in, and her adorable friends.
+          </p>
+          <button class="action-button" onclick="window.location.href='about-me.html'">About Me</button>
+          <button class="action-button" onclick="window.location.href='project.html'">Project Site</button>
+        </div>
+      </section>
+
+      <!-- Grid Section that appears after scrolling -->
+      <section class="link-grid">
+        <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px;">
+          <div class="website-buttons" onclick="window.location.href='characters.html'">Chiikawa's Friends</div>
+          <div class="website-buttons" onclick="window.location.href='about-me.html'">About Me</div>
+          <div class="website-buttons">Gallery</div>
+        </div>
+        <div style="display: flex; gap: 20px; justify-content: center;">
+          <div class="website-buttons" onclick="window.location.href='project.html'">Project Site</div>
+          <div class="website-buttons">Log In</div>
+          <div class="website-buttons" onclick="window.open('https://chiikawa.com', '_blank')">Official Website</div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
