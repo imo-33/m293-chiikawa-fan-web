@@ -1,19 +1,5 @@
 // Forms JavaScript - forms.js
 
-const burger = document.getElementById('burger');
-const mobileNav = document.getElementById('mobileNav');
-
-burger.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
-});
-
-// Close menu when a link is clicked
-document.querySelectorAll('.responsive-nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileNav.classList.remove('active');
-  });
-});
-
 // Form validation functions
 function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -27,6 +13,7 @@ function validatePassword(password) {
 }
 
 function validatePLZ(plz) {
+    // German/Austrian/Swiss postal code format
     const plzRegex = /^[0-9]{4,5}$/;
     return plzRegex.test(plz);
 }
@@ -127,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Validate password
             if (!validatePassword(data.password)) {
-                showValidationMessage(document.getElementById('password'), 'Passwort muss mindestens 8 Zeichen haben, einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
+                showValidationMessage(document.getElementById('password'), 'Passwort muss mindestens 8 Zeichen haben, einen Grossbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
                 setInputValidationState(document.getElementById('password'), false);
                 isValid = false;
             } else {
@@ -265,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
             passwordInput.addEventListener('blur', function () {
                 if (this.value) {
                     if (!validatePassword(this.value)) {
-                        showValidationMessage(this, 'Passwort muss mindestens 8 Zeichen haben, einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
+                        showValidationMessage(this, 'Passwort muss mindestens 8 Zeichen haben, einen Grossbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
                         setInputValidationState(this, false);
                     } else {
                         showValidationMessage(this, '');
@@ -340,4 +327,3 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
     }
   }, 1500);
 });
-

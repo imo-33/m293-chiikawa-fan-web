@@ -1,4 +1,32 @@
 // Forms JavaScript - forms.js
+document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.getElementById('burger');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    if (burger && mobileNav) {
+        burger.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = mobileNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                burger.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!burger.contains(event.target) && !mobileNav.contains(event.target)) {
+                mobileNav.classList.remove('active');
+                burger.classList.remove('active');
+            }
+        });
+    }
+});
 
 // Form validation functions
 function validateEmail(email) {
@@ -13,7 +41,6 @@ function validatePassword(password) {
 }
 
 function validatePLZ(plz) {
-    // German/Austrian/Swiss postal code format
     const plzRegex = /^[0-9]{4,5}$/;
     return plzRegex.test(plz);
 }
@@ -114,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Validate password
             if (!validatePassword(data.password)) {
-                showValidationMessage(document.getElementById('password'), 'Passwort muss mindestens 8 Zeichen haben, einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
+                showValidationMessage(document.getElementById('password'), 'Passwort muss mindestens 8 Zeichen haben, einen Grossbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
                 setInputValidationState(document.getElementById('password'), false);
                 isValid = false;
             } else {
@@ -252,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function () {
             passwordInput.addEventListener('blur', function () {
                 if (this.value) {
                     if (!validatePassword(this.value)) {
-                        showValidationMessage(this, 'Passwort muss mindestens 8 Zeichen haben, einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
+                        showValidationMessage(this, 'Passwort muss mindestens 8 Zeichen haben, einen Grossbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
                         setInputValidationState(this, false);
                     } else {
                         showValidationMessage(this, '');
@@ -327,3 +354,4 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
     }
   }, 1500);
 });
+

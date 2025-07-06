@@ -1351,75 +1351,128 @@ small {
   animation: fadeIn 0.3s ease;
 }
 
-/* ===================================================
-   📱 Styleguide – Responsive Design
-   Breakpoints:
-     - Smartphone: max-width: 767px
-     - Tablet & Desktop: ab 768px (siehe unten)
-   Ziel:
-     Layout & Inhalte an kleine Bildschirme anpassen
-     (flexible Spalten, reduzierte Sidebar, bessere Lesbarkeit)
-=================================================== */
 
-/* ------------------------------------ */
-/* 📱 Smartphone-Breakpoint (≤ 767px)   */
-/* ------------------------------------ */
-@media screen and (max-width: 767px) {
-
-  .burger {
-    display: block;
-  }
-  
-  .nav-buttons {
-    display: none;
-  }
-
-  .responsive-nav.active {
-    display: flex;
-  }
-
-  .nav-buttons {
-    display: none;
-  }
-}
-
-.responsive-nav {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 60px;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  padding: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  z-index: 999;
-}
-
-
-.responsive-nav a {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  font-size: 18px;
-}
-
-.responsive-nav.active {
-  display: flex;
-  flex-direction: column;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 .burger {
-  display: none;
+  display: none; /* Hidden by default */
   font-size: 28px;
   cursor: pointer;
   padding: 8px;
   background: none;
   border: none;
-  color: var(--color-accent-pink); /* or set a fallback color */
+  color: var(--color-accent-pink);
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.burger:hover {
+  color: var(--color-rose-pink);
+  transform: scale(1.1);
+}
+
+.burger.active {
+  color: var(--color-rose-pink);
+}
+
+.responsive-nav {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  position: fixed;
+  top: 50px; /* Adjust based on your header height */
+  left: 0;
+  right: 0;
+  background: var(--glass-bg);
+  backdrop-filter: var(--backdrop-blur);
+  padding: 20px;
+  box-shadow: 0 4px 20px var(--shadow-medium);
+  z-index: 999;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.responsive-nav a {
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 16px;
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.responsive-nav a:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.responsive-nav a:hover {
+  background: linear-gradient(135deg, var(--color-pale-pink), var(--color-blush-pink));
+  color: var(--text-not-that-dark);
+  transform: translateX(5px);
+}
+
+.responsive-nav.active {
+  display: flex;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Query for Mobile - Show burger, hide nav buttons */
+@media screen and (max-width: 767px) {
+  .burger {
+    display: block; /* Show burger menu on mobile */
+  }
+  
+  .nav-buttons {
+    display: none; /* Hide regular nav buttons on mobile */
+  }
+
+  /* Adjust main content padding for mobile */
+  .main-content {
+    padding-top: 60px; /* Increase to account for mobile nav */
+  }
+
+  /* Make sure header has proper height on mobile */
+  .header {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  /* Adjust content box for mobile */
+  .content-box {
+    margin: 10px;
+    padding: 25px 20px;
+  }
+
+  /* Adjust responsive nav top position */
+  .responsive-nav {
+    top: 60px;
+  }
+}
+
+/* Ensure nav buttons are visible on desktop */
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none; /* Hide burger on desktop */
+  }
+  
+  .nav-buttons {
+    display: flex; /* Show nav buttons on desktop */
+  }
+
+  .responsive-nav {
+    display: none !important; /* Never show mobile nav on desktop */
+  }
 }

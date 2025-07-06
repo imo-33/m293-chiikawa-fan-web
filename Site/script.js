@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Validate password
             if (!validatePassword(data.password)) {
-                showValidationMessage(document.getElementById('password'), 'Passwort muss mindestens 8 Zeichen haben, einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
+                showValidationMessage(document.getElementById('password'), 'Passwort muss mindestens 8 Zeichen haben, einen Grossbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
                 setInputValidationState(document.getElementById('password'), false);
                 isValid = false;
             } else {
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
             passwordInput.addEventListener('blur', function () {
                 if (this.value) {
                     if (!validatePassword(this.value)) {
-                        showValidationMessage(this, 'Passwort muss mindestens 8 Zeichen haben, einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
+                        showValidationMessage(this, 'Passwort muss mindestens 8 Zeichen haben, einen Grossbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten');
                         setInputValidationState(this, false);
                     } else {
                         showValidationMessage(this, '');
