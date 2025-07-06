@@ -44,7 +44,6 @@ body {
   height: 100vh;
   min-height: 100vh;
   overflow-x: hidden;
-  overflow-y: auro;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -52,7 +51,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   background: var(--bg-gradient);
-  overflow-x: hidden;
   line-height: 1.6;
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
@@ -361,14 +359,15 @@ body {
   flex-direction: column;
   overflow: hidden;
   padding: 40px 20px;
+  min-height: calc(100vh - 50px);
 }
 
 .background-images {
   position: absolute;
   top: 0;
   left: 0;
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -378,15 +377,14 @@ body {
 
 .bg-image {
   background: linear-gradient(135deg, var(--color-rose-pink), var(--color-blush-pink));
-  border: 2px solid var(--color-soft-pink);
+  border: 1px solid var(--border-light);
   border-radius: 40px;
-  opacity: 0.5; /* Increased opacity for better visibility */
+  opacity: 0.2;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: all 0.5s ease;
   animation: float 6s ease-in-out infinite;
-  box-shadow: 0 4px 20px var(--shadow-medium); /* Added shadow for emphasis */
 }
 
 .bg-image:nth-child(odd) {
@@ -1353,14 +1351,75 @@ small {
   animation: fadeIn 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .forgot-password-info {
-    padding: 15px;
-    margin-bottom: 20px;
+/* ===================================================
+   📱 Styleguide – Responsive Design
+   Breakpoints:
+     - Smartphone: max-width: 767px
+     - Tablet & Desktop: ab 768px (siehe unten)
+   Ziel:
+     Layout & Inhalte an kleine Bildschirme anpassen
+     (flexible Spalten, reduzierte Sidebar, bessere Lesbarkeit)
+=================================================== */
+
+/* ------------------------------------ */
+/* 📱 Smartphone-Breakpoint (≤ 767px)   */
+/* ------------------------------------ */
+@media screen and (max-width: 767px) {
+
+  .burger {
+    display: block;
   }
   
-  .forgot-password-info p {
-    font-size: 13px;
+  .nav-buttons {
+    display: none;
   }
+
+  .responsive-nav.active {
+    display: flex;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+}
+
+.responsive-nav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+
+.responsive-nav a {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.responsive-nav.active {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px;
+  background: none;
+  border: none;
+  color: var(--color-accent-pink); /* or set a fallback color */
 }

@@ -1,5 +1,19 @@
 // Forms JavaScript - forms.js
 
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobileNav');
+
+burger.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.responsive-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+  });
+});
+
 // Form validation functions
 function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -13,7 +27,6 @@ function validatePassword(password) {
 }
 
 function validatePLZ(plz) {
-    // German/Austrian/Swiss postal code format
     const plzRegex = /^[0-9]{4,5}$/;
     return plzRegex.test(plz);
 }
@@ -327,3 +340,4 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
     }
   }, 1500);
 });
+
