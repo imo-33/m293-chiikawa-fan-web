@@ -4,7 +4,8 @@
   "description": "Optimierung der Website",
   "main": "index.js",
   "scripts": {
-    "test": "ls"
+    "prebuild": "rimraf dist",
+    "build": "npx html-minifier --input-dir ./src --output-dir ./dist --collapse-whitespace --file-ext html && npx css-minify -d src -o dist"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,9 @@
     "underscore": "^1.13.7"
   },
   "devDependencies": {
-    "html-minifier": "^4.0.0"
+    "css-minify": "^2.1.0",
+    "html-minifier": "^4.0.0",
+    "replace-in-file": "^8.3.0",
+    "rimraf": "^6.0.1"
   }
 }
